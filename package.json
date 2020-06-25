@@ -4,9 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "prettier": "prettier --config .prettierrc.json --write app/**/*.*",
+    "prettier": "prettier --config .prettierrc.json --write test/spec/*.*",
     "lint": "eslint -c .eslintrc.json ./",
-    "test": "mocha --config ./test/config/.mocharc.json",
+    "test": "protractor test/config/conf.js",
     "coverage": "nyc --config .nycrc.json npm run test"
   },
   "repository": {
@@ -30,19 +30,22 @@
   "homepage": "https://github.com/whitechapel5991/calculator_testing_mocha#readme",
   "devDependencies": {
     "chai": "^4.2.0",
+    "chai-as-promised": "^7.1.1",
     "eslint": "^7.2.0",
     "eslint-config-airbnb": "^18.2.0",
     "eslint-config-prettier": "^6.11.0",
     "eslint-plugin-import": "^2.21.2",
     "eslint-plugin-jsx-a11y": "^6.3.0",
     "eslint-plugin-prettier": "^3.1.4",
+    "eslint-plugin-protractor": "^2.1.1",
     "eslint-plugin-react": "^7.20.0",
     "eslint-plugin-react-hooks": "^4.0.0",
     "husky": "^4.2.5",
     "mocha": "^8.0.1",
     "mochawesome": "^6.1.1",
     "nyc": "^15.1.0",
-    "prettier": "^2.0.5"
+    "prettier": "^2.0.5",
+    "protractor": "^7.0.0"
   },
   "husky": {
     "hooks": {

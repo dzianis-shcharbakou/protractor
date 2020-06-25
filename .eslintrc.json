@@ -3,14 +3,15 @@
     "commonjs": true,
     "es2020": true,
     "node": true,
-    "mocha": true
+    "mocha": true,
+    "browser": true
   },
-  "extends": ["airbnb", "prettier"],
+  "extends": ["airbnb", "prettier", "plugin:protractor/recommended"],
   "parserOptions": {
     "ecmaVersion": 11
   },
   "rules": {
     "prettier/prettier": "error"
   },
-  "plugins": ["prettier"]
+  "plugins": ["prettier", "protractor"]
 }
