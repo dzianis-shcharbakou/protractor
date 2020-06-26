@@ -10,7 +10,7 @@ exports.config = {
   mochaOpts: {
     spec: 'test/spec/*.spec.js',
     reporter: 'mochawesome',
-    slow: 4000,
+    slow: 20000,
   },
-  baseUrl: 'http://juliemr.github.io/protractor-demo/',
+  baseUrl: 'https://xn--d1aiavecq8cxb.xn--p1ai/samsung',
 };
